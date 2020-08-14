@@ -3,3 +3,152 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+// body {
+
+// }
+
+header {
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba($color: darkslateblue, $alpha: 0.8);
+  height: 10vh;
+
+  nav {
+    display: flex;
+    li {
+      list-style: none;
+      align-items: center;
+    }
+
+    a {
+      padding: 0.25em;
+      margin: 0 1.5em;
+      text-decoration: none;
+      color: rgb(241, 241, 241);
+
+      &:hover {
+        transition: all 400ms ease-in-out;
+        color: darkslategray;
+        background-color: white;
+        border-radius: 0.25em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    flex-direction: column;
+
+    a {
+      margin: 0 0.75em !important;
+    }
+  }
+
+  .grid {
+    flex-direction: column;
+  }
+
+  section {
+    padding: 1em !important;
+  }
+}
+
+h2,
+h3,
+h4,
+h5 {
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5em 12em;
+  height: 50vh;
+}
+
+.section-div {
+  margin: auto;
+}
+
+.grid {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+
+  li {
+    margin: auto 2em;
+  }
+}
+
+.main-hero {
+  height: 90vh;
+  color: white;
+  position: relative;
+
+  .bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+    background-image: url("../img/bg-1.jpg");
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #414a4f;
+      opacity: 0.75;
+    }
+  }
+}
+
+.about-me {
+}
+
+.skills {
+  ul {
+    margin-top: 2em;
+  }
+}
+
+.contact {
+  height: 10vh;
+  padding: 0;
+  background-color: darkcyan;
+
+  li {
+    color: white;
+    margin: auto 15em;
+  }
+
+  a {
+    text-decoration: none;
+    background-color: whitesmoke;
+    color: black;
+    padding: 0.75em 1.75em;
+  }
+}
+
+.services {
+}
