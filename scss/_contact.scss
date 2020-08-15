@@ -1,27 +1,4 @@
 .form-contact {
-  .bg-image-2 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    z-index: -1;
-    background-image: url("../img/bg-2.jpg");
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: #414a4f;
-      opacity: 0.75;
-    }
-  }
-
-  height: 82vh;
   legend {
     font-size: 2em;
     color: white;
@@ -39,31 +16,20 @@
   fieldset {
     border: none;
     display: flex;
-  }
-
-  input[name="name"],
-  input[name="email"] {
-    width: 61%;
+    flex-direction: column;
   }
 
   input,
   textarea {
-    border: solid darkslategray 1px;
+    border: solid lightseagreen 1px;
     padding: 0.5em;
     margin: 3em 5em;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .form-contact {
-    input[name="name"],
-    input[name="email"] {
-      width: 87%;
-    }
-
-    input,
-    textarea {
-      margin: 3em 1em !important;
-    }
+  input,
+  textarea {
+    margin: 1em;
   }
 }
