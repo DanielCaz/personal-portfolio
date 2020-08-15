@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniel Cazarez</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="index.html">Daniel Cazarez</a></h1>
+      <nav>
+        <li><a href="index.html#sobre-mi">Sobre Mi</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="index.html#servicios">Servicios</a></li>
+      </nav>
+    </header>
+    <section class="form-contact">
+      <div class="bg-image-2"></div>
+      <div class="section-div">
+        <form method="post" data-netlify="true">
+          <fieldset>
+            <legend>Contacto</legend>
+            <input required type="text" name="name" placeholder="Tu Nombre *" />
+            <input
+              required
+              type="email"
+              name="email"
+              placeholder="Tu Correo *"
+            />
+            <textarea
+              required
+              name="message"
+              placeholder="Tu mensaje *"
+            ></textarea>
+            <div data-netlify-recaptcha="true"></div>
+            <input type="submit" name="submit" value="Enviar Correo" />
+          </fieldset>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; Daniel Cazarez 2020</p>
+    </footer>
+  </body>
+</html>

@@ -1,3 +1,4 @@
+@import "contact";
 @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
 
 * {
@@ -22,6 +23,11 @@ header {
   background-color: rgba($color: darkslateblue, $alpha: 0.8);
   height: 10vh;
 
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
   nav {
     display: flex;
     li {
@@ -32,7 +38,6 @@ header {
     a {
       padding: 0.25em;
       margin: 0 1.5em;
-      text-decoration: none;
       color: rgb(241, 241, 241);
 
       &:hover {
@@ -41,48 +46,6 @@ header {
         background-color: white;
         border-radius: 0.25em;
       }
-    }
-  }
-}
-
-@media screen and (max-width: 800px) {
-  header {
-    flex-direction: column;
-
-    a {
-      margin: 0 0.75em !important;
-    }
-  }
-
-  .grid {
-    flex-direction: column;
-  }
-
-  section {
-    padding: 1em !important;
-  }
-
-  .skills {
-    img {
-      width: 0.5em;
-    }
-  }
-
-  .services {
-    ul {
-      &.grid {
-        > li {
-          margin: 1em 0;
-          padding: 0.5em !important;
-        }
-      }
-    }
-  }
-
-  .contact {
-    li {
-      padding: 1em 1em;
-      margin: 1em 0 !important;
     }
   }
 }
@@ -176,7 +139,7 @@ section {
 }
 
 .contact {
-  padding: 3em 10em;
+  padding: 2em 10em;
   background-color: darkcyan;
 
   li {
@@ -185,6 +148,7 @@ section {
   }
 
   a {
+    border-radius: 5px;
     text-decoration: none;
     background-color: whitesmoke;
     color: black;
@@ -208,9 +172,52 @@ section {
 }
 
 footer {
-  background-color: darkgray;
-  padding: 1em;
+  color: white;
+  background-color: darkslategrey;
+  padding: 0.75em;
   p {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    flex-direction: column;
+
+    a {
+      margin: 0 0.75em !important;
+    }
+  }
+
+  .grid {
+    flex-direction: column;
+  }
+
+  section {
+    padding: 1em !important;
+  }
+
+  .skills {
+    img {
+      width: 0.5em;
+    }
+  }
+
+  .services {
+    ul {
+      &.grid {
+        > li {
+          margin: 1em 0;
+          padding: 0.5em !important;
+        }
+      }
+    }
+  }
+
+  .contact {
+    li {
+      padding: 0.75em 1em;
+      margin: 0.5em 0 !important;
+    }
   }
 }
