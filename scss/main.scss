@@ -82,7 +82,7 @@ header {
   .contact {
     li {
       padding: 1em 1em;
-      margin: 2em 0 !important;
+      margin: 1em 0 !important;
     }
   }
 }
@@ -162,9 +162,6 @@ section {
   }
 }
 
-.about-me {
-}
-
 .skills {
   img {
     width: 4.5em;
@@ -207,5 +204,13 @@ section {
         border: solid lightseagreen 2px;
       }
     }
+  }
+}
+
+footer {
+  background-color: darkgray;
+  padding: 1em;
+  p {
+    text-align: center;
   }
 }
