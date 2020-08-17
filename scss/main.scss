@@ -74,6 +74,16 @@ section {
   padding: 5em 12em;
 }
 
+hr {
+  height: 5px;
+  background-color: white;
+  margin: 1em auto;
+}
+
+ul {
+  padding: 1em;
+}
+
 .section-div {
   margin: auto;
 }
@@ -128,6 +138,10 @@ section {
 .skills {
   img {
     width: 4.5em;
+  }
+
+  > ul {
+    padding: 10em;
   }
 
   ul {
