@@ -1,4 +1,6 @@
 .form-contact {
+  background-color: lightgray;
+  height: 90vh;
   h2 {
     font-size: 2em;
     color: white;
@@ -23,13 +25,13 @@
   textarea {
     border: solid lightseagreen 1px;
     padding: 0.5em;
-    margin: 3em 5em;
+    margin: 2em 5em;
   }
 }
 
 @media screen and (max-width: 800px) {
   input,
   textarea {
-    margin: 1em;
+    margin: 0.5em;
   }
 }

@@ -16,11 +16,15 @@ body {
 }
 
 header {
+  z-index: 10;
+  position: sticky;
+  top: 0;
   color: white;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgba($color: darkslateblue, $alpha: 0.8);
+  // background-color: rgba($color: darkslateblue, $alpha: 0.8);
+  background-color: darkslateblue;
   height: 10vh;
 
   a {
@@ -172,7 +176,7 @@ ul {
 
 .services {
   color: white;
-  background-color: darkslateblue;
+  background-color: rgba($color: darkslateblue, $alpha: 0.95);
 
   ul {
     &.grid {
