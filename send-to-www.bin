@@ -1,0 +1,3 @@
+#! /bin/bash
+rm -rv /var/www/testing-host/*
+cp -rfv dist/* /var/www/testing-host
